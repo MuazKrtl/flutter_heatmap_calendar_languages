@@ -3,45 +3,45 @@ class DateUtil {
 
   static const List<String> MONTH_LABEL = [
     '',
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+    'Ocak', // January
+    'Şubat', // February
+    'Mart', // March
+    'Nisan', // April
+    'Mayıs', // May
+    'Haziran', // June
+    'Temmuz', // July
+    'Ağustos', // August
+    'Eylül', // September
+    'Ekim', // October
+    'Kasım', // November
+    'Aralık', // December
   ];
 
   static const List<String> SHORT_MONTH_LABEL = [
     '',
-    'Jan',
-    'Feb',
+    'Ock',
+    'Şub',
     'Mar',
-    'Apr',
+    'Nis',
     'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    'Haz',
+    'Tem',
+    'Ağu',
+    'Eyl',
+    'Ekm',
+    'Kas',
+    'Ara',
   ];
 
   static const List<String> WEEK_LABEL = [
     '',
-    'Sun',
-    'Mon',
-    'Tue',
-    'Wed',
-    'Thu',
-    'Fri',
-    'Sat',
+    'Pzr',
+    'Pzt',
+    'Sal',
+    'Çrş',
+    'Prş',
+    'Cum',
+    'Cmt',
   ];
 
   /// Get start day of month.

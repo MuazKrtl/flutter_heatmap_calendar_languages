@@ -157,9 +157,9 @@ class _HeatMapCalendar extends State<HeatMapCalendar> {
   /// Header widget which shows left, right buttons and year/month text.
   Widget _header() {
     int monthIndex = (_currentDate?.month ?? 1) - 1;
-    String monthName = (monthIndex >= 0 && monthIndex < widget.turkishMonthNames.length)
-        ? widget.turkishMonthNames[monthIndex]
-        : '';
+    String monthName = (monthIndex >= 0 && monthIndex < HeatMapCalendar.turkishMonthNames.length)
+      ? HeatMapCalendar.turkishMonthNames[monthIndex]
+      : '';
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[

@@ -88,7 +88,7 @@ class HeatMapCalendar extends StatefulWidget {
   final double? colorTipSize;
 
   // Define Turkish month names
-  final List<String> turkishMonthNames = [
+  static const List<String> turkishMonthNames = [
     'Ocak', // January
     'Şubat', // February
     'Mart', // March

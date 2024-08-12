@@ -87,22 +87,6 @@ class HeatMapCalendar extends StatefulWidget {
   /// The double value of [HeatMapColorTip]'s tip container's size.
   final double? colorTipSize;
 
-  // Define Turkish month names
-  static const List<String> turkishMonthNames = [
-    'Ocak', // January
-    'Şubat', // February
-    'Mart', // March
-    'Nisan', // April
-    'Mayıs', // May
-    'Haziran', // June
-    'Temmuz', // July
-    'Ağustos', // August
-    'Eylül', // September
-    'Ekim', // October
-    'Kasım', // November
-    'Aralık' // December
-  ];
-
   const HeatMapCalendar({
     Key? key,
     required this.colorsets,
@@ -156,10 +140,6 @@ class _HeatMapCalendar extends State<HeatMapCalendar> {
 
   /// Header widget which shows left, right buttons and year/month text.
   Widget _header() {
-    int monthIndex = (_currentDate?.month ?? 1) - 1;
-    String monthName = (monthIndex >= 0 && monthIndex < HeatMapCalendar.turkishMonthNames.length)
-      ? HeatMapCalendar.turkishMonthNames[monthIndex]
-      : '';
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
@@ -174,7 +154,9 @@ class _HeatMapCalendar extends State<HeatMapCalendar> {
 
         // Text which shows the current year and month
         Text(
-          '$monthName ${_currentDate?.year ?? ''}',
+          DateUtil.MONTH_LABEL[_currentDate?.month ?? 0] +
+              ' ' +
+              (_currentDate?.year).toString(),
           style: TextStyle(
             fontSize: widget.monthFontSize ?? 12,
           ),

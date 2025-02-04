@@ -1,3 +1,6 @@
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MuazKrtl&layout=compact)
+
 # Flutter Heatmap Calendar
 
 Flutter Heatmap Calendar inspired by github contribution chart.
